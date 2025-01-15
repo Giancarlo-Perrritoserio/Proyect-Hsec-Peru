@@ -10,16 +10,16 @@ const Header = () => {
           <img
             src={logo} // Usa la variable que importamos
             alt="HSEC Perú Logo"
-            className="h-30 w-20"
+            className="h-35 w-20"
           />
           <div className="flex flex-col">
-            <span className="text-sm font-bold text-gray-800 leading-tight">
+            <span className="text-lg font-bold text-gray-800 leading-tight">
               Especialistas en Prevención de riesgos
             </span>
-            <span className="text-sm font-bold text-gray-800 leading-tight">
+            <span className="text-sx font-bold text-gray-800 leading-tight">
               Primer PETZL TECHNICAL PARTNER del País
             </span>
-          </div>
+          </div>  
         </div>
       </div>
     </header>
