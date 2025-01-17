@@ -8,6 +8,7 @@ import Home from './pages/Home/Home';
 import Courses from './pages/Courses/Courses';
 import Certificates from './pages/Certificates/Certificates';
 import Companies from './pages/Companies/Companies';
+import Nosotros from './pages/Nosotros/Nosotros.jsx';
 
 const App = () => {
   console.log("App Component Rendered");
@@ -20,6 +21,7 @@ const App = () => {
           <Route path="courses" element={<Courses />} />
           <Route path="certificates" element={<Certificates />} /> 
           <Route path="companies" element={<Companies />} /> 
+          <Route path="Nosotros" element={<Nosotros />} /> 
         </Route>
       </Routes>
     </BrowserRouter>
