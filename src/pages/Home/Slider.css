@@ -1,0 +1,55 @@
+.slider-container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px; /* Ajusta el ancho según necesites */
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  
+  .slider {
+    display: flex;
+    gap: 20px; /* Espaciado entre los logos */
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none; /* Elimina las barras de desplazamiento en IE y Edge */
+    scrollbar-width: none; /* Elimina las barras de desplazamiento en Firefox */
+  }
+  
+  .slider::-webkit-scrollbar {
+    display: none; /* Elimina las barras de desplazamiento en Chrome */
+  }
+  
+  .slider-item {
+    flex: 0 0 auto;
+    width: 120px; /* Ancho de cada logo */
+    height: 80px; /* Alto de cada logo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .slider-item img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+  
+  .fade-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 80px; /* Ancho del efecto de desvanecimiento */
+    pointer-events: none;
+    z-index: 1;
+  }
+  
+  .fade-overlay.left {
+    left: 0;
+    background: linear-gradient(to right, white, transparent);
+  }
+  
+  .fade-overlay.right {
+    right: 0;
+    background: linear-gradient(to left, white, transparent);
+  }
+  
